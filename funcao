@@ -1,0 +1,33 @@
+programa {
+    //Declaração das variáveis
+    inteiro i
+    cadeia nome = "", n = ""
+    real nota = 0.0, maior = 0.0
+  
+  funcao inicio() {
+    
+
+     para (i = 1; i <= 5; i++){
+      escreva("Informe o nome do aluno: ")
+      leia(n)
+      escreva("Informe a nota do aluno: ")
+      leia(nota)
+
+      se (nota > maior ){
+        maior = nota 
+        nome = n
+      }
+       escreverTela()
+    }
+    escreverTela()
+    escreva("A maior nota foi ", maior, "do aluno:", nome)
+  }
+  funcao escreverTela (){
+  limpa()
+    escreva("---------------------------------\n")
+    escreva("Verificador de maior nota:\n")
+    escreva("Maior nota até agora: ", maior, "\n")
+    escreva("---------------------------------\n")
+    }
+}
+
